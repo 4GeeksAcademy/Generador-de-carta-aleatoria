@@ -29,6 +29,7 @@ window.onload = function() {
     suitTop.textContent = suit;
     numberElement.textContent = number;
     suitBottom.textContent = suit;
+
     if (suit === "♦" || suit === "♥") {
       suitTop.style.color = "red";
       suitBottom.style.color = "red";
@@ -37,6 +38,7 @@ window.onload = function() {
       suitBottom.style.color = "";
     }
   }
+  updateCard();
 
   regenerateButton.addEventListener("click", function() {
     updateCard();
